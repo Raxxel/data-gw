@@ -4,8 +4,8 @@ Koleksi aset tema Discord dan media pribadi milik **Raxxel**, untuk kustomisasi 
 
 ## Isi repo
 
-- [Pain.jpg](./Pain.jpg) — gambar untuk ikon Home Discord.
-- [output.gif](./output.gif) — GIF animasi untuk ikon Home Discord.
+- [Pain.jpg](./asset/Pain.jpg) — gambar untuk ikon Home Discord.
+- [output.gif](./asset/output.gif) — GIF animasi untuk ikon Home Discord.
 
 Nama dan lokasi kedua file dipertahankan agar link yang sudah dipakai tidak berubah.
 
@@ -13,8 +13,8 @@ Nama dan lokasi kedua file dipertahankan agar link yang sudah dipakai tidak beru
 
 Gunakan URL raw untuk gambar di CSS:
 
-- **Gambar:** `https://raw.githubusercontent.com/Raxxel/data-gw/main/Pain.jpg`
-- **GIF:** `https://raw.githubusercontent.com/Raxxel/data-gw/main/output.gif`
+- **Gambar:** `https://raw.githubusercontent.com/Raxxel/data-gw/main/asset/Pain.jpg`
+- **GIF:** `https://raw.githubusercontent.com/Raxxel/data-gw/main/asset/output.gif`
 
 ## Contoh pemakaian di Vencord
 
@@ -36,7 +36,7 @@ Buka **Settings -> Vencord -> Open QuickCSS**, lalu tempel kode berikut secara m
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: url("https://raw.githubusercontent.com/Raxxel/data-gw/main/output.gif") center / cover no-repeat;
+  background: url("https://raw.githubusercontent.com/Raxxel/data-gw/main/asset/output.gif") center / cover no-repeat;
   pointer-events: none;
 }
 ```
