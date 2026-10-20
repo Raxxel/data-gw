@@ -1,0 +1,83 @@
+/* 1. Ikon Home diganti GIF (tidak menyentuh warna tema) */
+[data-list-item-id="guildsnav___home"] > [class*="childWrapper__"] {
+  position: relative;
+  overflow: hidden;
+}
+[data-list-item-id="guildsnav___home"] > [class*="childWrapper__"] > * {
+  visibility: hidden !important;
+}
+[data-list-item-id="guildsnav___home"] > [class*="childWrapper__"]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: url("https://raw.githubusercontent.com/Raxxel/data-gw/main/asset/output.gif") center / cover no-repeat;
+  pointer-events: none;
+}
+
+/* 2. Font Caveat (hanya jenis font, warna tetap ikut tema bawaan) */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+* {
+  font-family: 'Caveat', cursive !important;
+}
+
+/* Chat & kolom ketik tetap pakai font standar Discord */
+[class*="chatContent_"],
+[class*="messagesWrapper_"],
+[class*="channelTextArea_"],
+[class*="form_"] {
+  font-family: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+/* 3. GIF di Member List */
+[class*="membersWrap_c8ffbb"],
+[class*="membersWrap_"] {
+  background-image: url("https://raw.githubusercontent.com/Raxxel/data-gw/main/FromKlickpin.com-Beautifulsidehustleideasthatfeelcuratedelegantandeasyenoughtorecreatethisweekendforideasworthsavingrightnow-ezgif.com-video-to-gif-converter.gif") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* 4. Wadah utama & kategori dibuat tembus ke GIF */
+[class*="membersWrap_c8ffbb"] [class*="members_c8ffbb"],
+[class*="membersWrap_"] [class*="members_"],
+[class*="membersGroup_"] {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* 5. Baris Member default: nyatu/bersih tanpa kotak */
+[class*="member_"] {
+  background: transparent !important;
+  transition: background 0.15s ease, border-radius 0.15s ease;
+}
+
+/* 6. Efek Hover/Seleksi seperti referensi: highlight gelap membulat */
+[class*="member_"]:hover,
+[class*="member_"][class*="selected_"] {
+  background: rgba(0, 0, 0, 0.45) !important;
+  border-radius: 8px !important;
+}
+
+/* Tetap jaga padding dalam baris agar hover tidak mepet */
+[class*="member_"] [class*="layout_"] {
+  background: transparent !important;
+}
+
+/* Glass untuk kartu Activity di sidebar Members */
+aside.membersWrap_c8ffbb .container__0f2e8 {
+  background: color-mix(
+    in oklab,
+    var(--background-surface-high) 35%,
+    transparent
+  ) !important;
+
+  -webkit-backdrop-filter: blur(10px) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+/* Scrollbar biar lebih sleek */
+::-webkit-scrollbar {
+  width: 8px !important;
+  background: transparent !important;
+}
